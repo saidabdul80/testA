@@ -4,7 +4,7 @@
         <div class="flex-shrink   antialiased  transition-all duration-200 w-[250px]" :class="{'w-0':!showMenu,'-translate-x-[300px]':!showMenu}">
             <SideBar key="1" />
         </div>
-        <div class="bg-[#F2F1F9] flex-1 duration-200 h-[100vh] p-5 md:p-7 overflow-x-auto">
+        <div class="bg-[#F2F1F9] flex-1 duration-200 h-[100vh] p-5 md:p-7 scroll-stlye overflow-x-auto">
             <!-- header card -->
             <div class="bg-white rounded py-4 px-8 shadow-[#f5f5f5_0px_0px_7px_1px] flex justify-between md:w-[128%]">
                 <div class="flex">
@@ -44,7 +44,7 @@
                         <p class="text-sm font-medium text-gray-900 dark:text-white mb-0 ml-2">Welcome Grace</p>
                         <span class="text-sm ml-2">Admin</span>
                         </div>
-                        <div :class="{'block': isDropdownOpen, 'hidden': !isDropdownOpen}" class="dropdown top-[50px] left-[0px] shadow-[#ccc_0px_10px_25px_-10px] w-[150px] absolute z-[1000]">
+                        <div :class="{'block': isDropdownOpen, 'hidden': !isDropdownOpen}" class="dropdown top-[50px] left-[-100px] md:left-[0px] shadow-[#ccc_0px_10px_25px_-10px] w-[150px] absolute z-[1000]">
                             <Transition name="fade">
                                 <ul v-show="isDropdownOpen" class="bg-white cursor-pointer	">
                                     <li class="hover:text-blue-400 p-3 text-gray-500 text-sm border-b">Profile</li>

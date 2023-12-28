@@ -489,9 +489,9 @@ import ProjectModal from './../components/ProjectModal.vue';
 
 <template>
     {{ modalOpenAction }}
-  <div class="w-100 md:w-[128%] ">
+  <div class="min-[920px]:w-[128%] max-[920px]:w-[100%] ">
     <Transition name="fade">
-        <div v-if="page=='main'" class="w-[inherit]">
+        <div v-if="page=='main'" class="w-full">
             <div class="flex justify-between my-8 items-center">
                 <h1 class="font-bold text-xl md:text-2xl mb-4 text-gray-800 opacity-[0.7]">Your Projects</h1>    
                 <button @click="openModal = true" class="py-2 w-[100px] md:w-[230px] px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-400 text-white hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">

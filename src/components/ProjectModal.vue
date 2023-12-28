@@ -17,11 +17,10 @@
 </script>
 
 <template>
-    <div 
-  class="fixed left-0 top-0 z-[1055] bg-[black]/25  h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+    <div  class="fixed left-0 top-0 z-[1055] bg-[black]/25  h-full w-full overflow-y-auto overflow-x-hidden outline-none"
   id="projectModalLabel" tabindex="-1" aria-labelledby="projectModalLabelLabel"
   aria-modal="true" role="dialog">
-  <div  class="pointer-events-none relative flex min-h-[calc(100%-1rem)] min-w-[calc(100%*1.9/3)] translate-y-[-50px] items-center transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+  <div  class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-[80%] md:min-w-[calc(100%*1.9/3)] translate-y-[-50px] items-center transition-all duration-300 ease-in-out mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
     <div
       class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
       <div
@@ -45,8 +44,8 @@
       </div>
 
       <!--Modal body-->
-      <div class="relative py-12 w-full flex justify-center">
-        <div class="py-5  w-[60%] ">
+      <div class="relative md:py-12 w-full flex justify-center">
+        <div class="py-5 w-[90%]  md:w-[60%] ">
             <div class="flex">
                 <div class="flex items-center mb-4">
                     <input id="disabled-radio-1" type="radio" v-model="type" value="Domain_Name" name="domain" class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300  ">
@@ -76,7 +75,7 @@
                     <input type="text"  class=" border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Food Blog" >
                 </div>
                 <div class="col-span-1">
-                    <button class="py-3.5 w-[80%] px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded border border-transparent bg-blue-400 text-white hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                    <button class="py-3.5 w-[100%] md:w-[80%] px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded border border-transparent bg-blue-400 text-white hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                         <span class="text-white text-base font-semibold ml-2">Next</span>
                         <span v-html="$globals.icons.arrow_right" style="fill: white;" class="opacity-[0.9] w-[40px] h-[20px]"></span> 
                     </button>
