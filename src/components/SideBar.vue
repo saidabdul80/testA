@@ -1,7 +1,6 @@
 <template>
-    <aside :key="refresh"
-      v-show="isSidebarOpen"
-      class="bg-[#2B2A3F] w-full  text-gray-200 w-64 flex-shrink-0 absolute top-0 left-0 h-full transform transition-transform ease-in-out -translate-x-full md:static md:translate-x-0">
+    <aside :key="refresh"      
+      class="bg-[#2B2A3F] w-[inherit]  text-gray-200 w-64 flex-shrink-0 absolute top-0 left-0 h-full">
       <div class="pl-10 pr-6 py-10">
         <h1 class="text-2xl font-semibold">
             <img class="w-[90%]" src="./../assets/images/logo-test.png" alt="">
