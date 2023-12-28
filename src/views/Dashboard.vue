@@ -122,10 +122,10 @@
     <div class=" w-[128%]">
         <div class="my-8 w-full bg-white rounded py-2 shadow-[#f5f5f5_0px_0px_7px_1px] ">
             <div class="flex items-center">
-                <img src="../assets/images/bolb.png" class="w-[150px] opacity-[0.4] ml-[-4px]"/>
+                <img src="../assets/images/bolb.png" class="w-[90px] md:w-[150px] opacity-[0.4] ml-[-4px]"/>
                 <div >
-                    <h5 class="text-2xl font-medium">Welcome Grace</h5>
-                    <p class="text-base">Use the guide to learn how to write your First article using our AI writing  Tool. </p>
+                    <h5 class="text-lg md:text-2xl font-medium">Welcome Grace</h5>
+                    <p class="text-xs md:text-base">Use the guide to learn how to write your First article using our AI writing  Tool. </p>
                     <div class="mt-3">
                         <button  disabled class="py-2 w-[130px] px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-400 text-white hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Learn More</button>
                         <button class="py-2 px-4 w-[130px] text-center inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg bg-tranparent border-2 border-blue-400 text-blue-400 hover:text-white hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 ml-3">Dismiss</button>
