@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Dashboard from './../views/Dashboard.vue';
 import Projects from './../views/Projects.vue';
 import Login from './../views/Login.vue';
-import IndexPage from './../IndexPage.vue';
+import IndexPage from '../IndexPage.vue';
 
 const routes = [
   {
