@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Dashboard from './../views/Dashboard.vue';
 import Projects from './../views/Projects.vue';
 import Login from './../views/Login.vue';
+import AIGuru from './../views/AIGuru.vue';
 import IndexPage from '../IndexPage.vue';
 
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login,
+  },
+  {
+    path: '/ai-guru',
+    name: 'AIGuru',
+    component: AIGuru,
   },
 ];
 
