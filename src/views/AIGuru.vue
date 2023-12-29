@@ -55,7 +55,7 @@ export default {
     methods: {
         generateContent() {
             this.isLoading = true;
-            const apiKey = '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';
+            const apiKey = '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';
             const endpoint = 'https://api.openai.com/v1/engines/davinci/completions';
 
             const prompt = `Write an article about ${this.keyword} with a tone of ${this.selectedTone}.`;
@@ -68,7 +68,7 @@ export default {
                 },
                 body: JSON.stringify({
                     prompt,
-                    max_tokens: 200
+                    max_tokens:1000,
                 })
             })
                 .then(response => response.json())
