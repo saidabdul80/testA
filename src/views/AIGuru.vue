@@ -74,7 +74,8 @@ export default {
                 .then(response => response.json())
                 .then(data => {
                     const generatedText = data.choices[0].text.trim();
-                    // Check and adjust keyword density
+                    this.generatedContent = generatedText;
+                    /* // Check and adjust keyword density
                     const keywordCount = (generatedText.match(new RegExp(this.keyword, 'gi')) || []).length;
                     const totalWords = generatedText.split(/\s+/).length;
                     const calculatedDensity = (keywordCount / totalWords) * 100;
@@ -85,7 +86,7 @@ export default {
                         // Regenerate content if keyword density is not within the specified range
                         this.generateContent();
                         return;
-                    }
+                    } */
 
                     this.isLoading = false; // Hide loader after response
                     // Handle other content additions here if needed
