@@ -55,7 +55,7 @@ export default {
     methods: {
         generateContent() {
             this.isLoading = true;
-            const apiKey = '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';
+            const apiKey = import.meta.env.VITE_GPT_API_KEY;
             const endpoint = 'https://api.openai.com/v1/engines/davinci/completions';
 
             const prompt = `Write an article about ${this.keyword} with a tone of ${this.selectedTone}.`;
@@ -68,7 +68,7 @@ export default {
                 },
                 body: JSON.stringify({
                     prompt,
-                    max_tokens:1000,
+                    max_tokens:200,
                 })
             })
                 .then(response => response.json())
